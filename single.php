@@ -14,6 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+			<button type ="button" id="toggle-status">Toggle Status</button>
 			<?php the_post_navigation(); ?>
 
 		<?php endwhile; // End of the loop. ?>
