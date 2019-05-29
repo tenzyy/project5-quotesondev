@@ -57,6 +57,16 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  */
 function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'qod-fontawesome','https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+	#TODO add FONT AWESOME wp enqueue style
+ // to do addy our own script .js file 
+ wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+ 
+ $script_url = get_template_directory_uri() . "/build/js/scripts.min.js";
+
+//  try adding the quotes with CSS ::after and ::before psuedo element 
+
+
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );

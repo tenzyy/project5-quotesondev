@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/fonts/Exo-LightItalic.eot");
+  src: url("../../assets/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-LightItalic.woff") format("woff"), url("../../assets/fonts/Exo-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Light.eot");
+  src: url("../../assets/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/Exo-Light.woff") format("woff"), url("../../assets/fonts/Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Medium.eot");
+  src: url("../../assets/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Medium.woff2") format("woff2"), url("../../assets/fonts/Exo-Medium.woff") format("woff"), url("../../assets/fonts/Exo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-MediumItalic.eot");
+  src: url("../../assets/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-MediumItalic.woff") format("woff"), url("../../assets/fonts/Exo-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -229,8 +257,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #00cc00;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -262,7 +290,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Exo", sans-serif;
   font-size: .9375rem; }
 
 abbr, acronym {
@@ -411,7 +439,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -593,3 +621,36 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+h2 {
+  color: white; }
+
+.home,
+.page {
+  width: 1080px;
+  margin: 0 auto;
+  margin-left: 10px;
+  background-color: #222222; }
+  .home img,
+  .page img {
+    width: 50vh;
+    height: auto; }
+  .home .site-description,
+  .home .source,
+  .page .site-description,
+  .page .source {
+    display: none; }
+  .home p,
+  .page p {
+    color: white; }
+  .home #new-quote-button,
+  .page #new-quote-button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    background-color: #222222;
+    border: 2px solid;
+    color: #00cc00;
+    padding: 0.7rem 2.5rem;
+    border-color: #00cc00; }

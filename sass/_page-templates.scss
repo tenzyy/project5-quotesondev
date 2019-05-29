@@ -5,3 +5,41 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
+
+//  home page
+h2{
+    color: white;
+}
+
+.home,
+.page {
+
+    width: 1080px;
+    margin: 0 auto;
+    margin-left: 10px;
+    background-color:#222222;
+   
+    img{
+        width: 50vh;
+        height: auto;
+    }
+    .site-description,
+    .source{
+        display: none;
+    }
+   p{
+        color: white; 
+    }
+
+    #new-quote-button {
+            font-size: 1.2rem;
+            font-weight: 400;
+            box-shadow: none;
+            text-shadow: none;
+            background-color: #222222;
+            border: 2px solid;
+            color: $color__text-main;
+            padding: 0.7rem 2.5rem;
+            border-color: $color__text-main;
+        } 
+}
