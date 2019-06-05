@@ -789,7 +789,7 @@ h1 {
     padding: 0.7rem 2.5rem;
     border-color: #00cc00; }
 
-.page-sbumit .quote-submission-wrapper .submit-form label, .page-sbumit .quote-submission-wrapper .submit-form input {
+.page-submit .quote-submission-wrapper .submit-form label, .page-submit .quote-submission-wrapper .submit-form input {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,5 +800,5 @@ h1 {
           flex-direction: column;
   padding: 10px; }
 
-.page-sbumit .quote-submission-wrapper .submit-form #quote-source-url {
+.page-submit .quote-submission-wrapper .submit-form #quote-source-url {
   padding-bottom: 10px; }
