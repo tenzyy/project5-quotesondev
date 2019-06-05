@@ -41,21 +41,23 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
 
-function qod_modify_archives( $query ){
-    if(is_home() || is_single () && 
-    !is_admin() && $query->is_main_query()
-    )
+function qod_modify_archives( $query ) {
+    if( is_home() || is_single() && !is_admin() && $query->is_main_query()
+    ) 
     {
-        
-        $query->set('orderby', 'rand' );
-        $query->set('order', 'ASC' );
-        $query->set('posts_per_page', 1 );
+        $query->set( 'orderby', 'rand' );
+        $query->set( 'posts_per_page', '1' );
     }
-       if( is_archive() && !is_admin() && $query->is_main_query() ){
-        $query->set('posts_per_page', 5 );
-        $query->set('order', 'ASC' );
-    
+    if( ( is_archive() ) && !is_admin() && $query->is_main_query() ){
+        $query->set( 'posts_per_page', '5' );
     }
 }
-
-add_action( 'pre_get_posts', 'qod_modify_archives' );
+add_action('pre_get_posts', 'qod_modify_archives');
+function qod_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'qod_body_class_for_pages' );

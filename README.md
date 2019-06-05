@@ -1,6 +1,21 @@
 # Quotes on Dev Starter
-
+Responsive website imitating Quotes on design. 
+Read or submit quotes on page using Wordpress to log in and out.
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+
+Using GET request to a WP REST API endpoint using Ajax to get random quotes for front page as URL updates using History API
+
+POST request for Submit page not completed yet.
+
+
+##Challenges
+
+    -This project is definitely more challenging than it seems.
+    -The scss was for desktop is bit more challenging as I was trying to fit the content within the quoation icons.
+    -Had issues trying to fit site content on page and editing the position of main navigation .
+    -Currently struggling with Jquery for the Post request. x
+
+
 
 ## Installation
 

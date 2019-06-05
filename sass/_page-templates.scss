@@ -4,42 +4,121 @@
 
 /* All Archives Page */
 
-/* Submit a Quote Page */
 
-//  home page
-h2{
-    color: white;
+// template layout 
+// *{border: 1px solid white; }
+
+
+
+.site-description,
+.source{
+    display: none;
 }
+.site-branding{
 
-.home,
-.page {
-
-    width: 1080px;
-    margin: 0 auto;
-    margin-left: 10px;
-    background-color:#222222;
-   
     img{
-        width: 50vh;
-        height: auto;
+        @include center-block;
+        width: 600px;
+        margin-top: 50px;
     }
-    .site-description,
-    .source{
-        display: none;
-    }
-   p{
-        color: white; 
-    }
-
-    #new-quote-button {
-            font-size: 1.2rem;
-            font-weight: 400;
-            box-shadow: none;
-            text-shadow: none;
-            background-color: #222222;
-            border: 2px solid;
-            color: $color__text-main;
-            padding: 0.7rem 2.5rem;
-            border-color: $color__text-main;
-        } 
 }
+
+// 
+.home,
+.archives,
+.page,  
+.single-post {
+    position: relative;
+    background-color:#222222;
+    .main-navigation{
+        display: block;
+    }
+    .entry-content{
+        display: flex;
+        flex-direction: column; 
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 10px;
+
+        p{
+            color: white;
+            @include desktop{
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+        }
+        .entry-meta{
+            h2{
+                color: white;
+                @include desktop{
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                }
+            }
+        }     
+    a:hover{color:#116814;
+    }
+    
+    }
+    #new-quote-button {
+            @include button;
+
+        } 
+        .about-content{
+            h1{
+                text-align: center;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+}
+
+//  Archive 
+.post-archives,
+            .category-archives,
+            .tag-archives{
+                h2{
+                    color: white;
+                }
+                list-style: none;
+                
+                ul {
+                    display: flex;
+                    flex-wrap:wrap;
+                    list-style: none;
+                    font-weight: 100;
+                    line-height: 2.1rem;
+                   a{
+                     padding-right: 15px;
+                     text-decoration: none;
+                     font-size: 1.2rem !important;
+                    }
+                }
+            }
+
+
+    .content-area{
+        @include desktop{
+            margin: 4.5rem 175px 1.5rem;
+            display:flex;
+          &::before{
+              content:'\f10d';
+                   font-family:'fontawesome';
+                   font-size:125px;
+                   line-height: 125px;
+                   padding: 10px;
+                    
+               
+               }
+               &::after{
+                   content:'\f10e';
+                   font-family:'fontawesome';
+                   font-size:125px;
+                   line-height: 125px;
+                    padding: 10px;
+                   
+               }    
+            }
+       }
+    

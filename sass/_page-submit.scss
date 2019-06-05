@@ -1,0 +1,19 @@
+.page-sbumit{
+    .quote-submission-wrapper{
+        .submit-form{
+    
+            label, input {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            #quote-source-url{
+                padding-bottom: 10px;
+            }
+        
+        }
+
+    }
+  
+}

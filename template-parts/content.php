@@ -40,5 +40,6 @@
 </article><!-- #post-## -->
 
 <?php if( is_home() || is_single() ): ?>
-	<button type="button" id="new-quote-button">Show Me Another!</button>
+<button type="button" id="new-quote-button">Show Me Another!</button>
 <?php endif; ?>
+
